@@ -1,0 +1,83 @@
+html body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #332D2D;
+}
+
+.Free .form-check-input, .form-label.Free, .cabin-card.Free {
+  background-color: rgb(35, 106, 58);
+}
+
+.cabin-name.Free {
+  background-color: rgb(25, 74, 40);
+}
+
+.Booked .form-check-input, .form-label.Booked, .cabin-card.Booked {
+  background-color: rgb(141, 96, 23);
+}
+
+.cabin-name.Booked {
+  background-color: rgb(95, 54, 20);
+}
+
+.Dirty .form-check-input, .form-label.Dirty, .cabin-card.Dirty {
+  background-color: rgb(173, 0, 0);
+}
+
+.cabin-name.Dirty {
+  background-color: rgb(88, 26, 26);
+}
+
+
+.Clean .form-check-input, .form-label.Clean, .cabin-card.Clean {
+  background-color: rgb(0, 94, 201);
+}
+
+.cabin-name.Clean {
+  background-color: rgb(8, 60, 120);
+}
+
+input {
+  position: relative;
+}
+
+input[type="datetime-local"] {
+  position: relative;
+}
+
+/* create a new arrow, because we are going to mess up the native one
+see "List of symbols" below if you want another, you could also try to add a font-awesome icon.. */
+input[type="datetime-local"]:after {
+  content: "\25BC"; 
+  color: #555;
+  padding: 0 5px;
+}
+
+/* change color of symbol on hover */
+input[type="datetime-local"]:hover:after {
+  color: #bf1400;
+}
+
+/* make the native arrow invisible and stretch it over the whole field so you can click anywhere in the input field to trigger the native datepicker*/
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+
+/* adjust increase/decrease button */
+input[type="datetime-local"]::-webkit-inner-spin-button {
+  z-index: 1;
+}
+
+/* adjust clear button */
+input[type="datetime-local"]::-webkit-clear-button {
+  z-index: 1;
+}

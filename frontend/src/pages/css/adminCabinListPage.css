@@ -1,0 +1,49 @@
+.container-background {
+  background-color: #332D2D;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.header-background {
+  background-color: #5472A0;
+  height: 35vh;
+  width: 100%;
+}
+
+.list-background {
+  overflow-y: scroll;
+  height: 47.5vh;
+  width: 100%;
+}
+
+.buttons-background {
+  height: 17.5vh;
+  width: 100%;
+}
+
+.list-group-item {
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  box-shadow: none;
+}
+
+.header-background2 {
+  background-color: #5472A0;
+  height: 10vh;
+  width: 100%;
+}
+
+.header2 {
+  background-color: #1F1B1B;
+  height: 17vh;
+  width: 100%;
+}
+
+.list-background2 {
+  overflow-y: scroll;
+  width: 100%;
+  padding-top: 3vh;
+}
