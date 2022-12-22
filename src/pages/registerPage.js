@@ -49,8 +49,7 @@ const RegisterPage = (props) => {
       phoneNumber: "",
       error: false,
       success: true
-
-    }),
+    });
       props.handleCancel();
   }
 
