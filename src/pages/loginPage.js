@@ -2,6 +2,7 @@
 // import
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { API } from "../config"
 
 
 //---Bootstrap---//
@@ -38,6 +39,7 @@ const LoginPage = () => {
     
     event.preventDefault();
     
+    console.log(API);
 
     // Enables ShowLoading()
     setValues({ ...values, error: false, loading: true })
